@@ -16,7 +16,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public class TitleScreenMixin{
     @Shadow @Final @Mutable private boolean fading;
 
-    @Inject(method = "<init>(Z)V", at = @At("RETURN"))
+    @Inject(method = "init", at = @At("RETURN"))
     private void onInit(CallbackInfo ci) {
         this.fading = false;
     }
