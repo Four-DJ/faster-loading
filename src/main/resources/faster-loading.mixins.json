@@ -1,0 +1,15 @@
+{
+	"required": true,
+	"package": "faster.loading.mixin",
+	"compatibilityLevel": "JAVA_16",
+	"mixins": [
+		"TitleScreenMixin",
+        "LoadingOverlay"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	},
+	"overwrites": {
+		"requireAnnotations": true
+	}
+}
